@@ -1,0 +1,53 @@
+2018-04-28 18:13:24.025  INFO 11764 --- [main] c.x.j.JWTAuthorizationApplication        : Starting JWTAuthorizationApplication on L00269-PC with PID 11764 (D:\IdeaProjects\springsecurity-jwt-auth\target\classes started by xuzhenchang in D:\IdeaProjects\springsecurity-jwt-auth)
+2018-04-28 18:13:24.028  INFO 11764 --- [main] c.x.j.JWTAuthorizationApplication        : No active profile set, falling back to default profiles: default
+2018-04-28 18:13:24.319  INFO 11764 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20deea7f: startup date [Sat Apr 28 18:13:24 CST 2018]; root of context hierarchy
+2018-04-28 18:13:29.008  INFO 11764 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4abcdb23] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-28 18:13:30.603  INFO 11764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-04-28 18:13:30.664  INFO 11764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-04-28 18:13:30.664  INFO 11764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-04-28 18:13:31.037  INFO 11764 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-04-28 18:13:31.038  INFO 11764 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6722 ms
+2018-04-28 18:13:31.294  INFO 11764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-28 18:13:31.295  INFO 11764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-28 18:13:31.295  INFO 11764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-28 18:13:31.295  INFO 11764 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-28 18:13:31.296  INFO 11764 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-04-28 18:13:31.296  INFO 11764 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-28 18:13:32.751  INFO 11764 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-04-28 18:13:32.789  INFO 11764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-04-28 18:13:33.140  INFO 11764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-04-28 18:13:33.142  INFO 11764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-04-28 18:13:33.172  INFO 11764 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-04-28 18:13:33.287  INFO 11764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-04-28 18:13:33.721  INFO 11764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-04-28 18:13:35.329  INFO 11764 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-04-28 18:13:35.737  INFO 11764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-04-28 18:13:37.465 DEBUG 11764 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2018-04-28 18:13:37.477 DEBUG 11764 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login', POST]
+2018-04-28 18:13:37.477 DEBUG 11764 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for org.springframework.security.web.util.matcher.AnyRequestMatcher@1
+2018-04-28 18:13:37.486 DEBUG 11764 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2018-04-28 18:13:37.487 DEBUG 11764 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2018-04-28 18:13:37.492  INFO 11764 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72ce812e, org.springframework.security.web.context.SecurityContextPersistenceFilter@25953be6, org.springframework.security.web.header.HeaderWriterFilter@42ef042a, org.springframework.security.web.authentication.logout.LogoutFilter@10f477e2, com.xu.jsonwebtoken.config.JWTLoginFilter@373afd6c, com.xu.jsonwebtoken.config.JWTAuthenticationFilter@521441d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70b2fa10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2443135, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@592ca48c, org.springframework.security.web.session.SessionManagementFilter@5e0c4f21, org.springframework.security.web.access.ExceptionTranslationFilter@6b415f5f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7c46c9c3]
+2018-04-28 18:13:38.241  INFO 11764 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20deea7f: startup date [Sat Apr 28 18:13:24 CST 2018]; root of context hierarchy
+2018-04-28 18:13:38.322  INFO 11764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.xu.jsonwebtoken.controller.TestController.hello()
+2018-04-28 18:13:38.326  INFO 11764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-28 18:13:38.327  INFO 11764 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-28 18:13:38.350  INFO 11764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 18:13:38.350  INFO 11764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 18:13:38.409  INFO 11764 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-28 18:13:38.488  INFO 11764 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2018-04-28 18:13:38.624 DEBUG 11764 --- [main] eGlobalAuthenticationAutowiredConfigurer : Eagerly initializing {webSecurityConfig=com.xu.jsonwebtoken.config.WebSecurityConfig$$EnhancerBySpringCGLIB$$a1264a0f@67d32a54}
+2018-04-28 18:13:38.647  INFO 11764 --- [main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 2a07421b-b541-4271-85db-266edc23b6b8
+
+2018-04-28 18:13:38.815  INFO 11764 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-04-28 18:13:38.930  INFO 11764 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-04-28 18:13:38.932  INFO 11764 --- [main] c.x.j.init.MyApplicationRunner           : ==服务启动后，初始化数据操作==
+2018-04-28 18:13:38.933  INFO 11764 --- [main] c.x.j.init.MyCommandLineRunner           : >>>>>>>>>>>>>>>服务启动检查1，开始检查用户系统<<<<<<<<<<<<<
+2018-04-28 18:13:38.989  INFO 11764 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-04-28 18:13:39.130  INFO 11764 --- [main] c.x.j.init.MyCommandLineRunner           : >>>>>>>>>>>>>>>用户已经初始化<<<<<<<<<<<<<
+2018-04-28 18:13:39.130  INFO 11764 --- [main] c.x.j.init.MyCommandLineRunner           : >>>>>>>>>>>>>>>检查用户系统结束<<<<<<<<<<<<<
+2018-04-28 18:13:39.131  INFO 11764 --- [main] c.x.j.JWTAuthorizationApplication        : Started JWTAuthorizationApplication in 16.242 seconds (JVM running for 18.589)
